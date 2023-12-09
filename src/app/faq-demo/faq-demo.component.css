@@ -1,0 +1,57 @@
+.mat-expansion-panel-header {
+  height: 50px;
+
+  background-color: white;
+}
+.mat-expansion-panel-header-title {
+  color: rgba(26, 115, 181, 1);
+  font-size: 16px;
+}
+
+.mat-expansion-panel-spacing {
+  margin: 0%;
+}
+.mat-expansion-panel {
+  box-shadow: none !important;
+  border-bottom: 1px solid rgba(177, 177, 177, 1) !important;
+}
+.mat-expansion-panel {
+  border: 2px;
+}
+:host ::ng-deep .mat-expansion-indicator::after {
+  content: none !important;
+  border-width: 0 !important;
+}
+.mdc-tab__text-label {
+  font-size: larger;
+}
+.mat-mdc-tab-body-content {
+  font-size: 40px;
+}
+:host
+  ::ng-deep.mat-step-icon.mat-step-icon-state-number.mat-step-icon-selected {
+  background-color: rgba(0, 146, 54, 1) !important;
+  color: rgba(20, 20, 20, 1);
+}
+
+.mat-step-icon-state-edit {
+  background-color: none;
+}
+:host ::ng-deep.mat-step-icon-state-edit {
+  background-color: white;
+  color: blue;
+  border: 1px rgba(26, 115, 181, 1) solid !important;
+}
+:host ::ng-deep .mat-step-text-label {
+  color: rgba(26, 115, 181, 1) !important;
+  font-size: medium !important;
+}
+
+:host::ng-deep.mat-step-label.mat-step-label-active.mat-step-label-selected
+  .mat-step-text-label {
+  color: rgba(20, 20, 20, 1) !important;
+  font-size: medium !important;
+}
+:host::ng-deep.mdc-elevation-overlay{
+  background-color: white !important;
+}

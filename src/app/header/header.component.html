@@ -1,0 +1,31 @@
+<header class="flex pt-6 pb-6 border w-full justify-between pl-12 pr-12">
+    <img src="./assets/image/Logo.png" alt="" class="w-20 h-8">
+    <div class="flex flex-row pl-10 gap-6">
+        <div class="border-2  border-y-white border-l-white pt-2">
+            <a class="m-7 py-9  text-large font-medium cursor-pointer" routerLink="" routerLinkActive="">About CSPL</a>
+            <a class="m-7 py-9  text-large font-medium cursor-pointer" routerLink="our-team" routerLinkActive="">Our
+                Team</a>
+            <a class="m-7 py-9 text-large font-medium cursor-pointer" routerLink="faqs" routerLinkActive="">FAQs</a>
+            <a class="m-7 py-9 text-large font-medium cursor-pointer" routerLink="contact-us"
+                routerLinkActive="">Contact
+                Us</a>
+            <button mat-button [matMenuTriggerFor]="menu"
+                class="pr-8 text-large font-medium cursor-pointer">Menu</button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item routerLink="faqdemo">Faqdemo</button>
+                <button mat-menu-item routerLink="demo">Demo</button>
+                <button mat-menu-item routerLink="purchase">Purchase Detail</button>
+                <button mat-menu-item routerLink="forget">Forget Password</button>
+                <button mat-menu-item routerLink="login">Login</button>
+            </mat-menu>
+
+        </div>
+        <div class="flex items-center">
+            <button
+                class="w-[130px] h-[42px] border rounded-md flex justify-center items-center border-[#548E08] text-[#548E08]">Register</button>
+            <button
+                class="w-[130px] h-[42px] border rounded-md flex justify-center items-center bg-[#548E08] text-[#ffff] ml-7">Login</button>
+        </div>
+
+    </div>
+</header>
